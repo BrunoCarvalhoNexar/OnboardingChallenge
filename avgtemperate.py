@@ -1,7 +1,9 @@
 class AvgTemperature:
 
-    def hottest(temperature):
-        return max(temperature.items(), key=lambda x: x[1])
+    def __init__(self,temp):
+       self.temperature = temp
+    def hottest(self):
+        return max(self.items(), key=lambda x: x[1])
 
     def coldest(temperature):
       return min(temperature.items(), key=lambda x: x[1])
