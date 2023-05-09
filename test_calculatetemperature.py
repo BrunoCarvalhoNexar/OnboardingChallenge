@@ -8,6 +8,7 @@ dictionary_temperature_values = [dictionary_temperature[k] for k, v in dictionar
 def test_average_temperature():
     avg_temperature = CalculateTemperature.avg_temperature(dictionary_temperature, dictionary_temperature_values)
     assert avg_temperature == 18.0
+
 def test_coldest_temperature():
     avg_temperature = CalculateTemperature.coldest(dictionary_temperature)
     assert avg_temperature == ('January', 12)
