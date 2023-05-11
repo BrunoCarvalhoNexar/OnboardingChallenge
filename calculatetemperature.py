@@ -1,8 +1,12 @@
+import argparse
+
+import pytest
+
+
 class CalculateTemperature:
 
     def __init__(self, temp):
         self.temperature = temp
-
     def hottest(self):
         return max(self.items(), key=lambda x: x[1])
 
