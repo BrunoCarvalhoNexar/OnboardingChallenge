@@ -16,6 +16,6 @@ def test_coldest_temperature():
     coldest = CalculateTemperature.coldest(dictionary_temperature)
     assert coldest == ('January', 12)
 
-def test_hottest_temperature(hottest):
+def test_hottest_temperature():
     hottest = CalculateTemperature.hottest(dictionary_temperature)
     assert hottest == ('August', 25)
